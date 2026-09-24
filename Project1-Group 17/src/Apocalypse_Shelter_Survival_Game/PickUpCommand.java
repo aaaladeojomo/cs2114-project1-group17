@@ -1,6 +1,6 @@
 package Apocalypse_Shelter_Survival_Game;
 
-public class PickUpCommand 
+public class PickUpCommand
 {
     private String itemName;
 
@@ -8,6 +8,7 @@ public class PickUpCommand
     {
         this.itemName = itemName;
     }
+
 
     public boolean execute(Player player)
     {
@@ -21,8 +22,10 @@ public class PickUpCommand
 
         for (Item item : currentLocation.getItems())
         {
+
             if (item.getName().equalsIgnoreCase(itemName))
             {
+
                 if (!player.addItem(item))
                 {
                     System.out.println("You cannot pick this up.");

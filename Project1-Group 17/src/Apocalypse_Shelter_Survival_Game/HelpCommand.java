@@ -4,6 +4,7 @@ public class HelpCommand
 {
     public boolean execute(Player player)
     {
+        // print out all of the commands the player can use
         System.out.println("Available commands:");
         System.out.println("- go: Move to another room.");
         System.out.println("- look: Look around the current room.");
